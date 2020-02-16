@@ -1,0 +1,100 @@
+Way to finish Machine Learning
+
+1. Preprocessing
+    a. Lihat korelasi
+    b. Cleaning
+        -Features ga perlu
+        -Data NaN
+        -Data Outliers
+    c. Labelling
+        -Dummy Var Pandas
+        -Label Encoder + One Hot Encoder
+    (bisa juga labelling dulu baru lihat korelasi)
+    d. Standardize
+        -Standard Scaler
+        -Normalisasi (minmax scaler)
+        -Max Abs Scaler
+        -Robust Scaler
+        -Normalizer
+        -Quantile Transformer
+        -Binarizer
+    e. PCA
+    f. Splitting
+2. Modeling
+    a. Regresi
+        -Linear Regression
+        -Ridge Regression
+        -Lasso Regression
+        -Elastic-Net Regression
+        -Polynomial Regression
+        #Classification Model's regressor
+    b. Klasifikasi
+        -Logistic Regression
+        -Decision Tree
+        -Random Forest
+        -K-Nearest Neighbors
+        # Adaboost
+        # Naive-Bayes
+        # SVM Support Vector Machine => SVC
+        # Extreme Random Forest
+    c. Clustering
+        -K-Means
+        # Affinity Propagation
+        # Mean Shift
+        # Spectral clustering
+        # Hirearchical clustering
+        # DBSCAN
+        # OPTICS
+        # Birch
+3. Evaluation Metrics
+    a. Regresi (Prioritas: MAE, MSE, RMSE)
+        -mean_absolute_error (MAE)
+        -RMAE
+        -mean_squared_error (MSE)
+        -RMSE
+        -mean_squared_log_error (MSLE)
+        -RMSLE
+        -median_absolute_error (MedAE)
+        -r2_score
+    b. Klasifikasi
+        -Confusion Matrix (Prioritas: Recall+, Precision+, F1 Score)
+            *Accuracy
+            *Inaccuracy / Error Rate / Missclasification Rate
+            *TP Rate / Sensitivity / Recall (positif)
+            *FP Rate
+            *TN Rate / Specificity / Selectifity / Recall (negatif)
+            *FN Rate
+            *Precision
+            *Prevalence
+            *Null Error Rate
+            *F1 Score
+            *Balanced Accuracy
+        -Jaccard Score
+        -ROC AUC
+        -classification_report
+        -precision_recall_fscore_support
+    c. Clustering
+        -Known Labels
+            *Contingency Matrix
+            *Adjusted Rand Index => similarity
+            *Mutual information score => agreement
+            *homogenitas / homogenity
+            *completeness / komplisitas
+            *rata2 harmonis homogenitas & komplisitas: V-Measure
+            *Fowlkes-Mallows scores => TP / sqrt((TP+FP) * (TP+FN))
+         homogeneity_completeness_v_measure
+        -Unknown Labels
+            *Silhoutte coefficient / koef bayangan
+            *Calinski-Harabasz index : variance ratio criterion
+            *Davies-Bouldin Index
+4. Inverse Transform
+5. Visualisasi
+    a. Seaborn
+        -pairplot
+        -heatmap
+    b. Pyplot
+        -plot
+        -scatter
+        -imshow
+6. Deploy
+    -Flask

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask x Plotly</title>
+</head>
+<body>
+    <h1>Flask x Plotly</h1>
+    <div id="plot" class="plot"></div>
+    <h6>2020 - Flask x Plotly</h6>
+    <img src="http://127.0.0.1:5000/storage/0.jpg">
+    <video controls>
+        <source src="http://127.0.0.1:5000/storage/1917.mp4"
+        type="video/mp4">
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/buXDUmBpr-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+
+<!-- import: jquery, d3.js, plotly.js -->
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<!-- d3.js -->
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<!-- plotly.js -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<script type="text/javascript">
+    var visualisasi = {{ plot | safe }}
+    Plotly.plot('plot', visualisasi, {})
+</script>
+</html>

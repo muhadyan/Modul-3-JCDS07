@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- external styling -->
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='a.css') }}>
+    <!-- internal style -->
+    <style>
+        p {background-color: violet; color: darkblue;}
+    </style>
+</head>
+<body>
+    <h1>Tes 123</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolorum voluptatibus ad alias fugit possimus minima beatae natus placeat? Soluta magnam, quo recusandae debitis deserunt mollitia quos. Rerum, blanditiis illo!</p>
+    <!-- inline style -->
+    <button style="background-color: lightsalmon;">
+        Click me!
+    </button>
+    <img src={{ url_for('static', filename='phone_2.png') }}>
+</body>
+</html>
